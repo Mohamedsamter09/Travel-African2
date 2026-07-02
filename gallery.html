@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Somali Venture Travel</title>
+    
+    <style>
+        body { background-color: #f4f4f4; color: #333333; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #008080; padding: 20px; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+        .logo h2 { color: #ffffff; margin: 0; }
+        nav ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 15px; }
+        nav ul li a { color: #ffffff; text-decoration: none; font-weight: bold; }
+        nav ul li a.active { color: #d4af37; }
+
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        .section-title { text-align: center; color: #008080; margin-bottom: 30px; }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #cccccc;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            color: #008080;
+            margin: 0 0 10px 0;
+        }
+
+        footer { background-color: #222222; color: #ffffff; text-align: center; padding: 15px; margin-top: 40px; }
+        nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover{
+    background-color: #d4af37;
+    color: #222;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.card{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img,
+.card-body{
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card:hover .card-body{
+    transform: translateY(-5px);
+}
+ </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo"><h2>Somali Venture</h2></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Beautiful Places to Visit</h2>
+        
+        <div class="gallery-grid">
+            <div class="card">
+                <img src="laas geel.jpg" alt="Laas Geel">
+                <div class="card-body">
+                    <h3>Laas Geel, Hargeisa</h3>
+                    <p>Ancient rock art caves that date back thousands of years.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="eyl.jpg" alt="Eyl Historic Town">
+                <div class="card-body">
+                    <h3>Eyl Historic Town</h3>
+                    <p>A quiet coastal town with a rich history and fortresses.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="daallo.jpeg" alt="Daallo Mountains">
+                <div class="card-body">
+                    <h3>Daallo Mountains, Erigavo</h3>
+                    <p>Stunning green forests and high mountain viewpoints.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="kismayo islands.png" alt="Kismayo Islands">
+                <div class="card-body">
+                    <h3>Kismayo Islands</h3>
+                    <p>Crystal clear water islands perfect for swimming and boating.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="lamadaya.jpg" alt="Lamadaya Waterfalls">
+                <div class="card-body">
+                    <h3>Lamadaya Waterfalls</h3>
+                    <p>Spectacular natural waterfalls located in northern hills.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="eyl.jpg" alt="Eyl Historic Town">
+                <div class="card-body">
+                    <h3>Eyl Historic Town</h3>
+                    <p>A quiet coastal town with a rich history and fortresses.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Somali Venture Travel Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
